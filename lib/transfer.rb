@@ -6,6 +6,8 @@ class Transfer
   def initialize (sender, receiver, amount)
     @status = "pending"
     @amount = amount
+    @sender = sender
+    @receiver = receiver
   end
 
   def valid?
